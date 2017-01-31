@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="assign-worker" name="Assign worker">
+    <extensionElements>
+      <biodi:bounds x="237" y="150" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable">
+      <input id="input1" label="price" camunda:inputVariable="price">
+        <inputExpression id="inputExpression1" typeRef="double" />
+      </input>
+      <output id="output1" label="assignedGroup" name="assignedGroup" typeRef="string" />
+      <rule id="row-451237520-1">
+        <inputEntry id="UnaryTests_0f3dizw">        <text><![CDATA[<= 1000]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_14ud78m">        <text><![CDATA["sales"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-755896516-1">
+        <inputEntry id="UnaryTests_1gjxa4a">        <text><![CDATA[> 1000]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1honzcp">        <text><![CDATA["management"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

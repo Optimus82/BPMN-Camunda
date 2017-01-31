@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ikea-order-client</groupId>
+  <artifactId>order-client</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  
+  <build>
+		<finalName>ikea-order-client</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<outputDirectory>/Users/Optimus82/Downloads/camunda-bpm-wildfly10-7/server/wildfly-10.1.0.Final/standalone/deployments</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

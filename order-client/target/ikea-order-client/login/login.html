@@ -1,0 +1,28 @@
+
+<form ng-submit="login()">
+    <div class="form-group">
+        <label for="email">Email Adresse:</label>
+        <input ng-model="user.mail" type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Passwort:</label>
+        <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="form-group">
+  <label for="">Rolle:</label>
+  <div class="radio">
+        <label for="carrier">
+        <input type="radio" ng-model="user.role" name="radio1" value="customer">Kunde</label>
+    </div>
+    <div class="radio">
+        <label for="carrier">
+        <input type="radio" ng-model="user.role" name="radio1" value="carrier">Spediteur</label>
+    </div>
+     <div class="radio">
+        <label for="carrier">
+         <input type="radio" ng-model="user.role" name="radio1" value="admin">Admin</label>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
